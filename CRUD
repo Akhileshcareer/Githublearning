@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <!--  <link rel="stylesheet" href="../resource/css/bootstrap.min.css">-->
+        <link rel="stylesheet" href="newcss.css"> 
+        <script>
+            //$(document).ready(function(){
+            //  $("button").click(function(){
+            //    $(".row").css("color", "black").slideUp(2000).slideDown(2000);
+            //  });
+            //});
+        </script>
+        <style>
+            .container{
+                width:1000px;
+                length:1200px;
+                background-color:lightblue;
+
+            }
+            .row{
+                padding:10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <!--<div class="container" >-->
+            <div  class="row" style="font-size:2vw">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><center><h2>Personal Details</h2></center></div>
+                <!--<h1 align="center" class="form-control"  style="font-size:3vw">Personal Details</h1>-->
+            </div>
+            <div  class="row" style="font-size:2vw">
+                <div class="col-sm-3"><label for="first_name">First Name</label></div>
+                <div  class="col-sm-3"><input type="text" id="first_name" name="first_name" class="form-control" style="font-size:2vw"  required></div>
+                <div class="col-sm-3"><label for="middle_name">Middle Name</label></div>
+                <div   class="col-sm-3"><input type="text" id="middle_name" name="middle_name" class="form-control" style="font-size:2vw"></div>
+                <div class="col-sm-3"><label for="last_name">Last Name</label></div>
+                <div  class="col-sm-3"><input id="last_name"  type="text" name="last_name" class="form-control" style="font-size:2vw"  required></div>
+                <div class="col-sm-3"><label for="father_name">Father'S Name</label></div>
+                <div   class="col-sm-3"><input type="text" id="father_name"  name="father_name"  class="form-control"  style="font-size:2vw"  required></div>
+                <div class="col-sm-3"><label for="mother_name">Mother'S Name</label></div>
+                <div   class="col-sm-3"><input type="text" id="mother_name"  name="mother_name" class="form-control" style="font-size:2vw"  required></div>
+                <!--</div>--> 
+            </div>
+            <div hidden>
+                <input type="text" id="uniqueID" name="uniqueID">
+            </div>
+
+            <!--<hr>-->
+            <!--            <div class="container">
+                            <h1  align="center" style="font-size:3vw">Contact Details</h1>
+                            <div  class="row" style="font-size:2vw">
+                                <div class="col-sm-3"><label for="mobile_number">Mobile Number</label></div>
+                                <div class="col-sm-3"><input id="mobile_number" type="text" name="mobile_number" class="form-control" style="font-size:2vw"  required></div>
+                                <div class="col-sm-3"><label for="alternate_mobile_number">Alternate Mobile Number</label></div>
+                                <div class="col-sm-3"><input id="alternate_mobile_number" type="text" name="alternate_mobile_number" class="form-control" style="font-size:2vw" required></div>
+                                <div class="col-sm-3"><label for="email">Email</label></div>
+                                <div class="col-sm-3"><input id="email" type="email" name="email" class="form-control" style="font-size:2vw" ></div>
+                                <div class="col-sm-3"><label for="pan_number">Pan Number</label></div>
+                                <div class="col-sm-3"><input id="pan_number" type="text" name="pan_number" class="form-control" style="font-size:2vw"  required></div>
+                                <div class="col-sm-3"><label for="adhaar_number">Adhaar Number</label></div>
+                                <div class="col-sm-3"><input id="adhaar_number"type="text" name="adhaar_number" class="form-control" style="font-size:2vw"  required></div>
+                            </div>
+                        </div>-->
+            <!--<hr>-->
+            <!--            <div class="container" >
+                            <h1  align="center" style="font-size:3vw ">Address Details</h1>
+                            <div id="address"  class="row" style="font-size:2vw">
+                                <div class="col-sm-3"><label for="city">City</label></div>
+                                <div class="col-sm-3"><input id="city" type="text" name="city" class="form-control" style="font-size:2vw" required></div>
+                                <div class="col-sm-3"><label for="state">State</label></div><br>
+                                <div class="col-sm-3"><input id="state" type="text" name="state" class="form-control" style="font-size:2vw"  required></div>
+                                <div class="col-sm-3"><label for="country">Country</label></div>
+                                <div class="col-sm-3"><input id="country" type="text" name="country" class="form-control" style="font-size:2vw"></div>
+                                <div class="col-sm-3"><label for="pincode">Pin Code</label></div>
+                                <div class="col-sm-3"><input id="pin_code" type="text" name="pincode" class="form-control" style="font-size:2vw" required></div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-4">
+                                    <button id="add-more" name="add-more" class="btn btn-primary">Add More</button>
+                                </div>
+                            </div>-->
+            <!--<hr>-->
+            <!--                <div class="container"> 
+                                <h1  align="center" style="font-size:3vw ">Educational Details</h1>
+                                <div  class="row" style="font-size:2vw">
+                                    <div class="col-sm-3"><label for="high_school">High School Percentage </label></div>
+                                    <div class="col-sm-3"><input id="high_school" type="text" name="high_school" class="form-control" style="font-size:2vw" placeholder="%" required></div>
+                                    <div class="col-sm-3"><label for="inter_mediate">Intermediate Percentage </label></div>
+                                    <div class="col-sm-3"><input id="inter_mediate" type="text" name="inter_mediate" class="form-control" style="font-size:2vw" placeholder="%" required></div>
+                                    <div class="col-sm-3"><label for="graduation">Graduatin Percentage</label></div>
+                                    <div class="col-sm-3"><input id="graduation" type="text" name="graduation" class="form-control" style="font-size:2vw" placeholder="%"></div>
+                                </div>
+                            </div>-->
+            <div class="jumbotron" hidden id="DataTable">
+                <h3>Details</h3>
+                <table id="eduTable" class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Middle Name</th>
+                            <th>Last Name</th>
+                            <th>Father Name</th>
+                            <th>Mother Name</th>
+                            <th>My ID</th>
+                        </tr>
+                    </thead>
+                    <tbody id="EduTBody">
+
+                    </tbody>
+                </table>
+            </div><!--
+            <input type="button" id="save_data" value="submit" onclick="submitData();">
+            <button >Click on me to hide</button>
+        </div>
+    </div>-->
+            <div class="row">
+                <div class="col-sm-2">
+                    <button type="button" id="save_data" value="Submit" class="btn btn-primary" onclick="submitData();">Submit</button>
+                </div>
+                <div class="col-sm-2">
+                    <button type="button" id="retrieve_data" class="btn btn-primary" value="Retrieve" onclick="Retrieve();">Retrieve</button>
+                </div>      
+                <div class="col-sm-2">
+                    <button type="button" id ="updateData" value="update" class="btn btn-primary" onclick="updateData();">Update</button>
+
+                </div>
+            </div>
+    </body>
+    <script>
+//        var count = 1;
+//        function addEduRow()
+//        {
+//            var html = "<tr>" +
+//                    "<td>" + (count + 1) + "</td>" +
+//                    "<td><id ='name' input type='text' class='form-control' name='Uni_name_" + (count + 1) + "'class=form-control'></td>" +
+//                    "<td><id ='course' input type='text' class='form-control' name='Uni_Course_" + (count + 1) + "'class=form-control'></td>" +
+//                    "<td><id ='board' input type='text' class='form-control'name='Uni_Board_" + (count + 1) + "'class=form-control'></td>" +
+//                    "<td><id ='yop' input type='text' class='form-control' name='Uni_Yop_" + (count + 1) + "'class=form-control'></td>" +
+//                    "<td><button type='button' class='btn btn-primary' id='removeRow' onclick='removeEduRow(id);'>Remove"
+//                    + "</tr>";
+//            $("#eduTable").append(html);
+//            count++;
+//        }
+//        function removeEduRow(id)
+//        {
+//            console.log(id);
+//            $("#" + id).closest("tr").remove();
+//            count--;
+//        }
+        function submitData() {
+            $.ajax({
+                url: "../MyFirstRegistrationForm/ControllerServlet",
+                type: "Post",
+                data: {
+                    callflag: "insert",
+                    first_name: $("#first_name").val(),
+                    middle_name: $("#middle_name").val(),
+                    last_name: $("#last_name").val(),
+                    father_name: $("#father_name").val(),
+                    mother_name: $("#mother_name").val()
+                },
+                success: function (response) {
+                    alert(response);
+//                    $("#fname").val(data);
+                }
+            });
+        }
+
+    </script>  
+    <script>
+
+        function Retrieve() {
+            $("#EduTBody").html("");
+            $.ajax({
+                url: "../MyFirstRegistrationForm/ControllerServlet",
+                type: "Post",
+                data: {
+                    callflag: "retrieve"
+                },
+                success: function (response) {
+                    $("#DataTable").removeAttr("hidden");
+                    var data = JSON.parse(response);
+                    for (var i = 0; i < data.length; i++)
+                    {
+                        var html = "<tr id='" + data[i].id + "'>"
+                                + "<td id='first" + data[i].id + "'>" + data[i].First_Name + "</td>"
+                                + "<td id='middle" + data[i].id + "'>" + data[i].Middle_Name + "</td>"
+                                + "<td id='last" + data[i].id + "'>" + data[i].Last_Name + "</td>"
+                                + "<td id='father" + data[i].id + "'>" + data[i].Father_Name + "</td>"
+                                + "<td id='mother" + data[i].id + "'>" + data[i].Mother_Name + "</td>"
+                                + "<td>" + data[i].id + "</td>"
+                                + "<td><input type='button' class='btn btn-primary text center' value='edit' id='edit_" + data[i].id + "' onclick='editData(id);'></td>"
+                                + "<td><input type='button' class='btn btn-primary text center' value='delete' id='del_" + data[i].id + "' onclick='deleteData($(this));'></td>"
+                                + "</tr>";
+                        $("#EduTBody").append(html);
+                    }
+                }
+            });
+        }
+        function editData(id)
+        {
+            alert(id);
+            var idl = $("#" + id).closest("tr").attr("id");
+            alert(idl);
+            $("#uniqueID").val(idl);
+            $("#first_name").val($("#first" + idl).text());
+            $("#middle_name").val($("#middle" + idl).text());
+            $("#last_name").val($("#last" + idl).text());
+            $("#father_name").val($("#father" + idl).text());
+            $("#mother_name").val($("#mother" + idl).text());
+//            $("#updateData").remove().attr("hidden");
+        }
+        function updateData()
+        {
+            alert("Inside Update Method");
+            $.ajax(
+                    {
+                        url: "../MyFirstRegistrationForm/ControllerServlet",
+                        type: "POST",
+                        data: {callflag: "update",
+                            uniqueID:$("#uniqueID").val(),
+                            first_name: $("#first_name").val(),
+                            middle_name: $("#middle_name").val(),
+                            last_name: $("#last_name").val(),
+                            father_name: $("#father_name").val(),
+                            mother_name: $("#mother_name").val()
+                        },
+
+                        success: function (response) {
+                            alert(response);
+
+                        }
+                    }
+            );
+        }
+    </script>
+    <script>
+        function deleteData(elem) {
+            var x = confirm("Are you sure you want to delete?");
+            if (x)
+                var id = elem.closest("tr").attr("id");
+            $.ajax({
+                url: "../MyFirstRegistrationForm/ControllerServlet",
+                type: "post",
+                data: {
+                    id: id,
+                    callflag: 'delete'
+                },
+                success: function (data) {
+//                    alert(data);
+                    alert("record deleted");
+                    elem.closest("tr").remove();
+                },
+                error: function () {
+                    alert("error");
+                }
+            });
+        }
+
+    </script>  
+</html>
+..............................................................
+
+DataHandler........
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.servo.handler;
+
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import com.servo.DBUtils.DBUtils;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.List;
+
+/**
+ *
+ * @author Akhilesh.Kumar
+ */
+public class DataHandler {
+
+    Connection con = null;
+    PreparedStatement pst;
+    ResultSet rs;
+
+    public String InsertData(List<String> list) {
+        String returnStr = "";
+        try {
+            String query = "insert into Akhil_Details(FIRST_NAME,MIDDLE_NAME,LAST_NAME,FATHER_NAME,MOTHER_NAME)values(?,?,?,?,?)";
+            con = DBUtils.getConnection(con);
+            pst = con.prepareStatement(query);
+            pst.setString(1, list.get(0));
+            pst.setString(2, list.get(1));
+            pst.setString(3, list.get(2));
+            pst.setString(4, list.get(3));
+            pst.setString(5, list.get(4));
+
+            int i = pst.executeUpdate();
+            DBUtils.closePrepareStatement(pst);
+            if (i > 0) {
+                returnStr = "Data inserted successfully!";
+            } else {
+                returnStr = "Oops.. Something went wrong there..!";
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        } finally {
+            DBUtils.closeComnnection(con);
+        }
+        return returnStr;
+    }
+
+    public JsonArray getAllEmployees() {
+        JsonArray ja = new JsonArray();
+        try {
+            con = new DBUtils().getConnection(con);
+            pst = con.prepareStatement("select * from Akhil_Details");
+            rs = pst.executeQuery();
+            while (rs.next()) {
+                JsonObject obj = new JsonObject();
+                obj.addProperty("First_Name", rs.getString(1));
+                obj.addProperty("Middle_Name", rs.getString(2));
+                obj.addProperty("Last_Name", rs.getString(3));
+                obj.addProperty("Father_Name", rs.getString(4));
+                obj.addProperty("Mother_Name", rs.getString(5));
+                obj.addProperty("id", rs.getInt(6));
+                ja.add(obj);
+            }
+            con.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return ja;
+    }
+
+    public int delete(int id) {
+        try {
+            con = new DBUtils().getConnection(con);
+            pst = con.prepareStatement("delete from Akhil_Details where id=?");
+            pst.setInt(1, id);
+            int i = pst.executeUpdate();
+            System.out.println("data deleted successfully");
+        } catch (Exception ex) {
+            System.out.println(ex);
+        }
+        return 0;
+    }
+
+    public int editData(int id, List<String> list) {
+        int i = 0;
+        try {
+            System.out.println("HEllo");
+            Connection con = null;
+            con = new DBUtils().getConnection(con);
+            String sql = "update AKHIL_DETAILS set FIRST_NAME=?, MIDDLE_NAME=?, LAST_NAME=?, FATHER_NAME=?, MOTHER_NAME=? where ID=?";
+            PreparedStatement pst = con.prepareStatement(sql);
+            pst.setString(1, list.get(0));
+            pst.setString(2, list.get(1));
+            pst.setString(3, list.get(2));
+            pst.setString(4, list.get(3));
+            pst.setString(5, list.get(4));
+            pst.setInt(6, id);
+            i = pst.executeUpdate();
+
+        } catch (Exception ex) {
+//            System.out.println(ex);
+            ex.printStackTrace();
+        }
+
+        return i;
+    }
+
+}
+.............................................
+ControllerServlet.java....
+
+package com.servo.controller;
+import com.google.gson.JsonArray;
+import com.servo.DBUtils.DBUtils;
+import com.servo.handler.DataHandler;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.util.*;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+@WebServlet(urlPatterns = {"/ControllerServlet"})
+public class ControllerServlet extends HttpServlet {
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
+        PrintWriter out = response.getWriter();
+        Connection con = null;
+        try {
+            String callflag = request.getParameter("callflag");
+            if (callflag.equals("insert")) {
+                String first_name = request.getParameter("first_name");
+                String middle_name = request.getParameter("middle_name");
+                String last_name = request.getParameter("last_name");
+                String father_name = request.getParameter("father_name");
+                String mother_name = request.getParameter("mother_name");
+                List<String> list = new ArrayList<String>();
+                list.add(first_name);
+                list.add(middle_name);
+                list.add(last_name);
+                list.add(father_name);
+                list.add(mother_name);
+                String returnStr = new DataHandler().InsertData(list);
+                out.print(returnStr);
+            } else if (callflag.equals("retrieve")) {
+                JsonArray ja = new DataHandler().getAllEmployees();
+                System.out.println("All Done");
+                System.out.print(ja);
+                out.print(ja);
+            }
+            else if (callflag.equals("delete")) {
+                String sid = request.getParameter("id") ;
+                int id=Integer.parseInt(sid);
+                DataHandler dh=new DataHandler();
+                dh.delete(id);  
+                System.out.println("deleted");
+            }
+            
+             else if (callflag.equals("update")) {
+                 
+                String first_name = request.getParameter("first_name");
+                String middle_name = request.getParameter("middle_name");
+                String last_name = request.getParameter("last_name");
+                String father_name = request.getParameter("father_name");
+                String mother_name = request.getParameter("mother_name");
+                String sid = request.getParameter("uniqueID") ;
+                System.out.println(first_name+" "+sid);
+                List<String> list = new ArrayList<String>();
+                list.add(first_name);
+                list.add(middle_name);
+                list.add(last_name);
+                list.add(father_name);
+                //out.print("bdsjfcrh");
+                list.add(mother_name);;
+                int id=Integer.parseInt(sid);
+                DataHandler dh=new DataHandler();
+                 
+               out.println(dh.editData(id,list) +" updated");
+            }
+            
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        } finally {
+            DBUtils.closeComnnection(con);
+        }
+    }
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        processRequest(request, response);
+    }
+    @Override
+    public String getServletInfo() {
+        return "Short description";
+    }
+}
+...........................
+DBUtils.java....
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.servo.DBUtils;
+
+import java.net.ConnectException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+/**
+ *
+ * @author Akhilesh.Kumar
+ */
+public class DBUtils {
+
+    public static Connection getConnection(Connection con) throws SQLException {
+        if (con == null || con.isClosed()) {
+            try {
+                Class.forName("oracle.jdbc.driver.OracleDriver");
+                con = DriverManager.getConnection("jdbc:oracle:thin:@192.168.1.24:1521:orcl", "C##test_admin", "system123#");
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+            return con;
+        } else {
+            return con;
+        }
+    }
+
+    public static void closeComnnection(Connection con) {
+
+    }
+
+    public static void closePrepareStatement(PreparedStatement pSmt) {
+
+    }
+
+    public static void closeResultSet(ResultSet pSmt) {
+
+    }
+}
+
+
+
+
